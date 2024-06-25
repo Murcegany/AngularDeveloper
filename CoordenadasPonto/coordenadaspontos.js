@@ -1,9 +1,27 @@
-let nomes = new Array(10);
+//Desafio
+//Leia 2 valores com uma casa decimal (x e y), que devem representar as coordenadas de um ponto em um plano. A seguir, determine qual o quadrante ao qual pertence o ponto, ou se está sobre um dos eixos cartesianos ou na origem (x = y = 0). Se o ponto estiver na origem, escreva a mensagem “Origem”. Se o ponto estiver sobre um dos eixos escreva “Eixo X” ou “Eixo Y”, conforme for a situação.
+var line = gets().split(" ");
+let X = parseFloat(line[0]);
+let Y = parseFloat(line[1]);
 
-for(let i = 0; i < 10; i++) {
-    nomes[i] = gets();
+if (X === 0 && Y === 0) {
+    print("Origem");
+} 
+else if (X === 0) {
+    print("Eixo Y");
+} 
+else if (Y === 0) {
+    print("Eixo X");
+} 
+else if (X > 0 && Y > 0) {
+    print("Q1");
+} 
+else if (X < 0 && Y > 0) {
+    print("Q2");
+} 
+else if (X < 0 && Y < 0) {
+    print("Q3");
+} 
+else if (X > 0 && Y < 0) {
+    print("Q4");
 }
-
-print(nomes[2]);  // Terceiro nome (índice 2)
-print(nomes[6]);  // Sétimo nome (índice 6)
-print(nomes[8]);  // Nono nome (índice 8)
