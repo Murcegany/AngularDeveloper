@@ -1,3 +1,5 @@
+//Desafio
+//Tendo como base a hora inicial e final de um jogo, calcule a duração do dele, sabendo que o mesmo pode começar em um dia e terminar em outro, tendo uma duração mínima de, 60 minutos e máxima de 24 horas.
 // Lê a linha de entrada e divide em um array de strings
 var line = gets().split(" ");
 
